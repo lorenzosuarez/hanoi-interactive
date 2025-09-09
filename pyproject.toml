@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hanoi-interactive-pro"
+version = "1.0.0"
+description = "Professional interactive Tower of Hanoi with optimal resume and manual manipulation"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Lorenzo Suarez" }]
+dependencies = [
+    "matplotlib>=3.5",
+]
+
+[project.scripts]
+hanoi = "hanoi_pro.ui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["hanoi_pro"]

@@ -1,0 +1,2 @@
+matplotlib>=3.5
+PyQt5>=5.15; platform_system != 'Linux'
