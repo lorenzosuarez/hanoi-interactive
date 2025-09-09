@@ -35,28 +35,9 @@ python -c "import hanoi_pro.ui as ui; print(ui.__doc__[:60])"  # smoke import
 The app models configurations as vectors in `{0,1,2}^n`. Legal moves alter exactly one coordinate of the vector
 consistent with the stack order. The shortest completion plan to the goal is computed by BFS.
 
-## Español
-
-**Autor:** Lorenzo Suarez — September 9, 2025  
-**Licencia:** MIT
-
-Herramienta profesional e interactiva para la Torre de Hanói. Podés arrastrar discos, avanzar paso a paso,
-ejecutar automáticamente respetando el intervalo, deshacer y reiniciar, y **continuar** desde cualquier estado
-con el camino **mínimo** hasta la meta.
-
-### Características
-- UI mínima: Play/Pause, Step, Undo, Reset + slider de intervalo
-- Drag & drop con resaltado de destinos legales
-- Continuación óptima vía BFS
-- Render sin recortes con discos redondeados
-- Atajos: Espacio (Play/Pause), Enter (Step), U/Backspace (Undo), R (Reset), Esc (Pause)
-
-### Inicio rápido
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -e .
-hanoi --disks 5
-# En macOS si falta backend:
+<picture>
+  <img alt="Hanoi Interactive Pro — vista inicial e interacción" src="https://github.com/user-attachments/assets/30540229-c007-44b6-84aa-7d547011f8c0" width="960">
+</picture>
 # pip install PyQt5
 # MPLBACKEND=QtAgg hanoi --disks 5
 ```
